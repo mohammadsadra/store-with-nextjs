@@ -1,13 +1,17 @@
+import Link from "next/link";
+
 export default function Header() {
     return (
         <div className="main">
             <div  style={{fontWeight: "bold", fontSize: "20px"}}>OurShop</div>
             <div className="buttons-container">
+                <Link href={'/about'}>
+                    <div className="button">
+                        About
+                    </div>
+                </Link>
                 <div>
-                    Brands
-                </div>
-                <div>
-                    OnSale
+                    Contact
                 </div>
             </div>
             <style jsx>{`
@@ -28,6 +32,14 @@ export default function Header() {
                     justify-content: space-between;
                     width: 150px;
                     cursor: pointer;
+                }
+                .button{
+                    color: black;
+                    text-decoration: none!important;
+                }
+                a {
+                    text-decoration: none; /* Removes underline */
+                    color: black; /* Sets color to black, or use 'inherit' to inherit from parent */
                 }
             `}</style>
 
