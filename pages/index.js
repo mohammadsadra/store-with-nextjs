@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Header/Header";
 import Cover from "@/components/Cover/Cover";
+import NewArrivals from "@/components/NewArraivels/newArrivals";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
               <meta name="viewport" content="width=device-width, initial-scale=1"/>
               <link rel="icon" href="/favicon.ico"/>
           </Head>
-          <Header></Header>
-          <Cover></Cover>
+          <Header/>
+          <Cover/>
+          <NewArrivals/>
           <style global jsx>{`
               body{
                   display: flex;
