@@ -1,11 +1,21 @@
-export default function ProductCard ({image, name, price}) {
+import { useRouter } from 'next/router';
+import {useProduct} from "@/ProductProvider";
+
+export default function ProductCard ({product}) {
+    const { setProduct } = useProduct();
+    const router = useRouter();
+
+    const handleClick = (p) => {
+        setProduct(p); // Set the current product in the global state
+        router.push('/productDetail'); // Navigate to the detail page
+    };
     return(
-        <div className="main">
+        <div className="main" onClick={()=>{handleClick(product)}}>
             <div className="image-container">
-                <img className="image" src={image} alt={'product'}/>
+                <img className="image" src={product.image} alt={'product'}/>
             </div>
-            <div className="card-title">{name}</div>
-            <div className="price">${price}</div>
+            <div className="card-title">{product.name}</div>
+            <div className="price">${product.price}</div>
             <style jsx>{`
                 .image-container{
                     

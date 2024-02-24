@@ -1,4 +1,5 @@
 import ProductCard from "@/components/productCard/productCard";
+import data from "@/data.json"
 
 export default function NewArrivals() {
 
@@ -9,13 +10,9 @@ export default function NewArrivals() {
                     NEW ARRIVALS
                 </div>
                 <div className="card-container">
-                    <ProductCard image={'../../1.png'} name={'SLEEVE STRIPED T-SHIRT'} price={10.99} />
-
-                    <ProductCard image={'../../2.png'} name={'T-SHIRT WITH TAPE DETAILS'} price={10.99} />
-
-                    <ProductCard image={'../../3.png'} name={'SKINNY FIT JEANS'} price={10.99} />
-
-                    <ProductCard image={'../../4.png'} name={'CHECKERED SHIRT'} price={10.99} />
+                    {data.map((product, index) => (
+                        <ProductCard key={index} product={product} />
+                    ))}
                 </div>
             </div>
             <style jsx>{`

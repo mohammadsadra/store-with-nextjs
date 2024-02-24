@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header";
 import Head from "next/head";
 
-export default function About (){
+export default function Contact (){
     const storeInfo = {
         name: "Fashion Forward",
         address: "123 Fashion Ave, New York, NY 10001, USA",
