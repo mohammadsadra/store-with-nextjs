@@ -14,7 +14,7 @@ export default function About (){
 
             <div className="main">
                 <div className="image-container">
-                    <img src="../../shop.jpg" alt="Descriptive Alt Text"/>
+                    <img className="image" src="../../shop.jpg" alt="Descriptive Alt Text"/>
                     <div className="text-overlay">About Us</div>
                 </div>
                 <div className="text-container">
@@ -50,21 +50,21 @@ export default function About (){
             <style jsx>{`
                 .text-container {
                     font-family: "Josefin Sans", sans-serif;
-                    max-width: 1000px;
+                    max-width: 80%;
                     padding: 12px;
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 22px;
                     text-align: justify;
                     text-justify: inter-word;
                     color: rgba(0, 0, 0, 0.6);
                 }
-
+                
                 .image-container {
                     position: relative;
                     text-align: center;
                     color: white;
-                    max-width: 1000px;
+                    width: 80%;
                 }
 
                 .image-container::after {
@@ -74,13 +74,12 @@ export default function About (){
                     left: 0;
                     right: 0;
                     bottom: 5px;
-                    background: rgba(128, 128, 128, 0.5); /* Grey tint */
                     border-radius: 20px;
                 }
 
                 /* Style the image (optional) */
                 .image-container img {
-                    max-width: 1000px; /* or any specific dimensions */
+                    width: 90%; /* or any specific dimensions */
                     border-radius: 20px;
                 }
 
@@ -90,7 +89,7 @@ export default function About (){
                     left: 50%;
                     transform: translate(-50%, -50%);
                     /* Additional styling for the text */
-                    font-size: 80px; /* Example size */
+                    font-size: 3rem; /* Example size */
                     color: white; /* Text color */
                     z-index: 999;
                     opacity: 0.7;
