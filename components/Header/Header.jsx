@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <div className="main">
             <div style={{fontWeight: "bold", fontSize: "20px"}}>
-                <a href={'/'} className="button">OurShop</a>
+                <a href={'/'} className="button">iMoShop</a>
             </div>
             <div className="buttons-container">
                 <div>
@@ -31,11 +31,11 @@ export default function Header() {
                     align-items: center;
                     justify-content: space-between;
                     width: 150px;
-                    cursor: pointer;
                 }
                 .button{
                     color: black;
                     text-decoration: red!important;
+                    cursor: pointer;
                 }
                 a {
                     text-decoration: none; /* Removes underline */

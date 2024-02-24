@@ -28,6 +28,7 @@ export default function ProductCard ({product}) {
                     display: flex;
                     flex-direction: column;
                     align-items: start;
+                    cursor: pointer;
                 }
                 .card-title{
                     margin-top: 10px;
