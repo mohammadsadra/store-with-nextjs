@@ -103,18 +103,10 @@ export default function About (){
                     align-items: center;
                 }
 
-                .card-title {
-                    margin-top: 10px;
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: #000000;
-                }
-
-                .price {
-                    margin-top: 5px;
-                    font-weight: 700;
-                    color: #000000;
-                    font-size: 16px;
+                @media (min-width: 1000px) {
+                    .image-container img {
+                        width: 50%; /* or any specific dimensions */
+                    }
                 }
                 
                 

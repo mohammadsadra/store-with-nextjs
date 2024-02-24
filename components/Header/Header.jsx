@@ -3,15 +3,15 @@ import Link from "next/link";
 export default function Header() {
     return (
         <div className="main">
-            <div  style={{fontWeight: "bold", fontSize: "20px"}}>OurShop</div>
+            <div style={{fontWeight: "bold", fontSize: "20px"}}>
+                <a href={'/'} className="button">OurShop</a>
+            </div>
             <div className="buttons-container">
-                <Link href={'/about'}>
-                    <div className="button">
-                        About
-                    </div>
-                </Link>
                 <div>
-                    Contact
+                    <a href={'/about'} className="button">About</a>
+                </div>
+                <div>
+                    <a href={'/contact'} className="button">Contact</a>
                 </div>
             </div>
             <style jsx>{`
@@ -35,7 +35,7 @@ export default function Header() {
                 }
                 .button{
                     color: black;
-                    text-decoration: none!important;
+                    text-decoration: red!important;
                 }
                 a {
                     text-decoration: none; /* Removes underline */
