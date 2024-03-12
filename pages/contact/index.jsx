@@ -1,5 +1,7 @@
 import Header from "@/components/Header/Header";
 import Head from "next/head";
+import Input from "@/components/Input/Input";
+import TextArea from "@/components/Input/TextArea";
 
 export default function Contact (){
     const storeInfo = {
@@ -36,13 +38,13 @@ export default function Contact (){
                         <h3>Send us a message</h3>
                         <form className="w-full">
                             <label htmlFor="name">Name:</label>
-                            <input type="text" id="name" name="name" required />
+                            <Input type={"text"} id={"name"} name={"name"}></Input>
 
                             <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" name="email" required />
+                            <Input type={"email"} id={"email"} name={"email"}></Input>
 
                             <label htmlFor="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <TextArea id={"message"} name={"message"} rows={4}></TextArea>
 
                             <button type="submit">Submit</button>
                         </form>
@@ -86,10 +88,11 @@ export default function Contact (){
                     opacity: 0.7;
                 }
                 .w-full{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
                 }
 
                 .main {
@@ -120,11 +123,6 @@ export default function Contact (){
                 label {
                     display: block;
                     margin-bottom: 5px;
-                }
-                input, textarea {
-                    width: 100%;
-                    margin-bottom: 20px;
-                    padding: 10px;
                 }
                 button {
                     display: block;
