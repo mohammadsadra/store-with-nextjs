@@ -1,6 +1,8 @@
 import Header from "@/components/Header/Header";
 import Head from "next/head";
 import {useProduct} from "@/ProductProvider";
+import AddToCartButton from "@/components/Button/AddToCartButton";
+import SizeButton from "@/components/Button/SizeButton";
 
 export default function ProductDetail (){
     const { product } = useProduct();
@@ -53,14 +55,12 @@ export default function ProductDetail (){
                     <hr className="line"/>
                     <div className="sub-title">Choose Size</div>
                     <div className="size-button-container">
-                        <div className="size-button">Small</div>
-                        <div className="size-button">Medium</div>
-                        <div className="size-button">Large</div>
+                        <SizeButton>Small</SizeButton>
+                        <SizeButton>Medium</SizeButton>
+                        <SizeButton>Large</SizeButton>
                     </div>
                     <hr className="line"/>
-                    <div className="add-button">
-                        Add to Cart
-                    </div>
+                    <AddToCartButton/>
 
                 </div>
 
@@ -82,7 +82,12 @@ export default function ProductDetail (){
                     align-items: start;
                     margin-inline-start: 30px;
                 }
-
+                .size-button-container{
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  gap: 10px;
+                }
                 .title {
                     font-size: 20px;
                     font-weight: bolder;
@@ -110,33 +115,6 @@ export default function ProductDetail (){
                     font-size: 16px;
                     line-height: 22px;
                     color: rgba(0, 0, 0, 0.6);
-                }
-                .size-button{
-                    padding: 10px 8px;
-                    border-radius: 20px;
-                    background-color: #F0F0F0;
-                    text-align: center;
-                }
-                .size-button-container{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    gap: 10px;
-                }
-                .add-button{
-                    /* Frame 14 */
-
-                    /* Auto layout */
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 16px 54px;
-                    gap: 12px;
-                    color: white;
-                    background: #000000;
-                    border-radius: 62px;
-
                 }
 
                 @media (max-width: 580px) {
