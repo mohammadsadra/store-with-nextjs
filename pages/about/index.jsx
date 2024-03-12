@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import Head from "next/head";
+import P from "@/components/Typography/P";
 
 export default function About (){
     return(
@@ -18,43 +19,43 @@ export default function About (){
                     <div className="text-overlay">About Us</div>
                 </div>
                 <div className="text-container">
-                    Welcome to [Your Shop Name], where fashion meets quality and style is accessible to all. Nestled in
-                    the
-                    heart of [City, State], our boutique has been the go-to destination for fashion enthusiasts seeking
-                    unique, trend-setting pieces since [Year of Establishment]. Our mission is simple: to provide a
-                    curated
-                    selection of high-quality apparel that empowers individuals to express their personal style with
-                    confidence.
-                    <br/>
-                    At [Your Shop Name], we believe in the power of fashion to transform and inspire. Our collection
-                    ranges
-                    from timeless classics to contemporary trends, featuring a diverse array of clothing options for
-                    men,
-                    women, and children. Each piece in our store is carefully selected to ensure it meets our high
-                    standards
-                    for quality, sustainability, and ethical production.
-                    <br/>
-                    Our passionate team is dedicated to delivering an exceptional shopping experience, offering
-                    personalized
-                    styling advice and attentive customer service. Whether you're searching for the perfect outfit for a
-                    special occasion or everyday wear, we're here to help you find pieces that you'll love and wear with
-                    pride.
-                    <br/>
-                    Join us at [Your Shop Name] and discover the joy of dressing well. Follow us on social media for the
-                    latest arrivals, style tips, and exclusive events. Welcome to our community of fashion lovers - we
-                    can't
-                    wait to style you!
+                    <P>
+                        Welcome to iMoShop, where fashion meets quality and style is accessible to all. Nestled in
+                        the heart of NewYork, our boutique has been the go-to destination for fashion enthusiasts seeking
+                        unique, trend-setting pieces since [Year of Establishment]. Our mission is simple: to provide a
+                        curated
+                        selection of high-quality apparel that empowers individuals to express their personal style with
+                        confidence.
+                    </P>
+                    <P>
+                        At iMoShop, we believe in the power of fashion to transform and inspire. Our collection
+                        ranges
+                        from timeless classics to contemporary trends, featuring a diverse array of clothing options for
+                        men,
+                        women, and children. Each piece in our store is carefully selected to ensure it meets our high
+                        standards
+                        for quality, sustainability, and ethical production.
+                    </P>
+                    <P>
+                        Our passionate team is dedicated to delivering an exceptional shopping experience, offering
+                        personalized
+                        styling advice and attentive customer service. Whether you're searching for the perfect outfit for a
+                        special occasion or everyday wear, we're here to help you find pieces that you'll love and wear with
+                        pride.
+                    </P>
+                    <P>
+                        Join us at iMoShop and discover the joy of dressing well. Follow us on social media for the
+                        latest arrivals, style tips, and exclusive events. Welcome to our community of fashion lovers - we
+                        can't wait to style you!
+                    </P>
                 </div>
             </div>
 
             <style jsx>{`
                 .text-container {
-                    font-family: "Josefin Sans", sans-serif;
-                    max-width: 80%;
+                    max-width: 70%;
                     padding: 12px;
                     font-weight: 400;
-                    font-size: 14px;
-                    line-height: 22px;
                     text-align: justify;
                     text-justify: inter-word;
                     color: rgba(0, 0, 0, 0.6);

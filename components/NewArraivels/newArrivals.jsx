@@ -1,4 +1,4 @@
-import ProductCard from "@/components/productCard/productCard";
+import ProductCard from "@/components/ProductCard/productCard";
 import data from "@/data.json"
 
 export default function NewArrivals() {
